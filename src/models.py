@@ -45,7 +45,7 @@ class CIFAR10Net(nn.Module):
             nn.Conv2d(3, base_ch, 3, padding=1, bias=False),
             nn.BatchNorm2d(base_ch), nn.GELU(),
         )
-        self.stage1 = nn.Sequential(ResBlock(base_ch, base_ch, stride=1),     ResBlock(base_ch, base_ch, stride=1))
+        self.stage1 = nn.Sequential(ResBlock(base_ch, base_ch, stride=1), ResBlock(base_ch, base_ch, stride=1))
         self.stage2 = nn.Sequential(ResBlock(base_ch, base_ch * 2, stride=2), ResBlock(base_ch * 2, base_ch * 2, stride=1))
         self.stage3 = nn.Sequential(ResBlock(base_ch * 2, base_ch * 4, stride=2), ResBlock(base_ch * 4, base_ch * 4, stride=1))
         self.stage4 = nn.Sequential(ResBlock(base_ch * 4, base_ch * 8, stride=2), ResBlock(base_ch * 8, base_ch * 8, stride=1))

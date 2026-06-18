@@ -1,20 +1,19 @@
-# Dossiers de données et de poids (A ne pas versionner)
+# Données et Poids
 data/
 checkpoints/
+results/
 
-# Fichiers Python compilés
+# Fichiers de développement et documents (Exclus du Git)
+*.ipynb
+*.pdf
+
+# Python et environnements
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Environnements virtuels
 dl_env/
 env/
 venv/
-.env
 
-# MacOS / Linux
+# Fichiers système
 .DS_Store
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
