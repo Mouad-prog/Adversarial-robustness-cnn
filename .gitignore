@@ -1,0 +1,20 @@
+# Dossiers de données et de poids (A ne pas versionner)
+data/
+checkpoints/
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+dl_env/
+env/
+venv/
+.env
+
+# MacOS / Linux
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
